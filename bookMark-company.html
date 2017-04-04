@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>즐겨찾기</title>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+<style>
+.layer{
+  position:absolute;
+  top:50%;
+  left:50%;
+  background:#26a69a;
+  transform:translate(-50%, -50%)
+}
+</style>
+
+<!-- Compiled and minified JavaScript -->
+<script src="./js/jquery-1.8.2.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+	$("a").hover(function(){
+			$( this ).addClass( "active" );
+		}, function(){
+			if($(this).text() == $("a:first").text()){
+				return false;
+			}
+			$( this ).removeClass( "active" );
+		}
+	);
+}); 
+</script>
+</head>
+<body>
+
+<div class="collection layer" >
+	<a href="#!" class="collection-item active">BookMark</a>
+	<a href="#!" class="collection-item">[Connect] 개발</a>
+	<a href="#!" class="collection-item">[Connect] 운영</a>
+	<a href="#!" class="collection-item">[Connect] 운영 - 메일</a>
+	<a href="#!" class="collection-item">[IM,사원검색] 로컬</a>
+	<a href="#!" class="collection-item">[IM] 개발</a>
+	<a href="#!" class="collection-item">[사원검색] 개발</a>
+	<a href="#!" class="collection-item">[IM,사원검색] Github</a>
+	<a href="#!" class="collection-item">[Chart] Github</a>
+	<a href="#!" class="collection-item">[Chart] HTML</a>
+	<a href="#!" class="collection-item">레드마인</a>
+	<a href="#!" class="collection-item">Google</a>
+	<a href="#!" class="collection-item">Google 캘린더</a>
+</div>
+
+
+</body>
+</html>

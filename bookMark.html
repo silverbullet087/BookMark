@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐겨찾기</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+<style>
+.layer{
+  position:absolute;
+  top:50%;
+  left:50%;
+  background:#26a69a;
+  transform:translate(-50%, -50%)
+}
+</style>
+
+<!-- Compiled and minified JavaScript -->
+<script src="./js/jquery-1.8.2.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+	$("a").hover(function(){
+			$( this ).addClass( "active" );
+		}, function(){
+			if($(this).text() == $("a:first").text()){
+				return false;
+			}
+			$( this ).removeClass( "active" );
+		}
+	);
+}); 
+</script>
+</head>
+<body>
+
+<div class="collection layer" >
+	<a href="#!" class="collection-item active">BookMark</a>
+	<a href="http://www.naver.com" class="collection-item">Naver</a>
+	<a href="https://www.google.co.kr/" class="collection-item">Google</a>
+	<a href="https://calendar.google.com/calendar/render?tab=wc#main_7" class="collection-item">Google 캘린더</a>
+	<a href="https://translate.google.co.kr/?hl=ko&tab=cT" class="collection-item">Google 번역</a>
+	<a href="https://drive.google.com/drive/my-drive" class="collection-item">Google 드라이버</a>
+	<a href="https://github.com" class="collection-item">Github</a>
+	<a href="https://silverbullet087.gitbooks.io/today-i-learned/content" class="collection-item">Git Book</a>
+	<a href="file:///D:/wproject/baekmin%20Utils/Image-Link-Conversion.html" class="collection-item">백민 유틸</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+<script src="./js/jquery-1.8.2.min.js"></script>
+<script src="./js/clipboard/clipboard.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('select').material_select();
+
+	var clipboard1 = new Clipboard('#conversion-copy');
+	var clipboard2 = new Clipboard('#commit-auto-copy');
+
+    $("#conversion").click(function(){
+        var openUrl = $("#input-value").val();
+		
+		var result = "http://drive.google.com/uc?export=view&id" + openUrl.substring(openUrl.lastIndexOf('='));
+		
+		$("#output-value").val(result);
+    });
+	
+	$("#commit-auto").click(function(){
+	
+		var commitMessage = $("#project-name").val() + " " + $("#project-content").val() + " - " + $("#project-content-add").val();
+		
+		$("#commit-auto-value").val(commitMessage);
+    });
+	
+	
+	
+	
+	
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<h3>구글 링크 이미지 전환</h3>
+	<p>공개된 파일의 링크 주소</p>
+	<textarea rows="4" cols="50" id="input-value" class="materialize-textarea"></textarea>
+	<button type="button" id="conversion" class="waves-effect waves-light btn">전환</button>
+	<p>외부 링크 이미지 URL 전환</p>
+	<textarea rows="4" cols="50" id="output-value" class="materialize-textarea"></textarea>
+	<button type="button" id="conversion-copy" class="waves-effect waves-light btn" data-clipboard-action="cut" data-clipboard-target="#output-value">잘라내기</button>
+	<hr/>
+
+	<h3>commit 메세지 생성</h3>
+	<p>commit 메세지 선택</p>
+	공부하는 것 :
+	<select id="project-name">
+	  <option value="[Clean-Code]">클린코드</option>
+	  <option value="[Daily-Coding]">일일코딩</option>
+	  <option value="[Refactoring]">리팩토링</option>
+	  <option value="[Design-pattern]">디자인 패턴</option>
+	</select>
+	<br/>
+	공부하는 내용 : 
+	<input type="text" name="project-content" id="project-content">
+	<br/>
+	추가 내용 : 
+	<input type="text" name="project-content-add" id="project-content-add">
+	<button type="button" id="commit-auto" class="waves-effect waves-light btn">commit 메세지 만들기</button>
+	<p>commit 메세지</p>
+	<textarea rows="4" cols="50" id="commit-auto-value" class="materialize-textarea"></textarea>
+	<button type="button" id="commit-auto-copy" class="waves-effect waves-light btn" data-clipboard-action="cut" data-clipboard-target="#commit-auto-value">잘라내기</button>
+	<hr/>
+	<p>메모장</p>
+	<textarea rows="4" cols="50" id="temp" class="materialize-textarea"></textarea>
+	
+	
+</div>
+</body>
+</html>
