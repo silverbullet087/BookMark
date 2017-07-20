@@ -5,17 +5,18 @@
 
 ### 묘적계곡 - 남양주
 
+-       ![묘적계곡](http://blogfiles5.naver.net/20100823_177/jdy0566_1282569711456WWi4m_JPEG/DSC_8210.jpg)
 -	[대중교통편](http://dmaps.kr/5i8hd) : 1시간 50분
 -	깊이 : 낮아 보임
--	사진들 ![묘적계곡](http://blogfiles5.naver.net/20100823_177/jdy0566_1282569711456WWi4m_JPEG/DSC_8210.jpg)
 -	관련글 링크
 	-	http://blog.naver.com/yllove7979/220776535863
 
 ### 고기리계곡 - 용인
-
+-       [고기리계곡](https://ggtour.or.kr/wp-content/uploads/2017/07/IMG_7584.jpg)
 -	[대중교통편](http://dmaps.kr/5i9fr) : 1시간35분
--	깊이 : 
+-	깊이 : 충분히 깊어 보임
 -	관련글 링크
+        - <http://tourhistory.tistory.com/209>
 
 ### 중원계곡 - 양평
 
@@ -35,12 +36,6 @@
 -	깊이 : 
 -	관련글 링크
 
-### 백운계곡 - 포천
-
--	[대중교통편](http://dmaps.kr/5i9ha) : 4시간30분
--	깊이 : 
--	관련글 링크
-
 ### 삼천사계곡 - 북한산
 
 -	[대중교통편](http://dmaps.kr/5i9hp) : 1시간13분
@@ -50,12 +45,6 @@
 ### 송추계곡 - 양주
 
 -	[대중교통편](http://dmaps.kr/5i9i4) : 1시간13분
--	깊이 : 
--	관련글 링크
-
-### 남안산성계곡 - 하남
-
--	[대중교통편](http://dmaps.kr/5i9ir) : 4시간
 -	깊이 : 
 -	관련글 링크
 
